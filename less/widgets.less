@@ -15,10 +15,6 @@
 //  1. Contact Form
 // -----------------------------
 
-.contactform {
-
-}
-
 
 
 // -----------------------------
@@ -179,11 +175,10 @@ hr.rule {
 //  5. Company Address
 // -----------------------------
 
-.companyaddress {
-	p {
-		padding-bottom: 0.25em;
-	}
+.companyaddress p {
+	padding-bottom: 0.25em;
 }
+
 
 
 
@@ -303,10 +298,12 @@ hr.rule {
         }
         &:hover {
             opacity: 1!important;
+
             .image-link {
                 background-blend-mode: multiply;
                 text-decoration: none;
             }
+            
             figcaption {
                 background-color: fade(@color-swatch4, 65%);
                 .flex-display(flex);
