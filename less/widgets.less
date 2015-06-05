@@ -195,7 +195,7 @@ hr.rule {
 .signupform, .blogsearch {
 
 	.form-body {
-		.flex-display;
+		.flex-display(flex);
 	}
 
 	.form-group {
@@ -278,6 +278,8 @@ hr.rule {
         &:nth-child(3n) {
             margin-right: 0;
         }
+
+
         // Display at 50% at tablet
         @media @tablet-860px {
             width: 48%;
@@ -288,6 +290,7 @@ hr.rule {
                 margin-right: 3.33%;
             }
         }
+        
         // Display at 100% at mobile
         @media @mobile-650px {
             margin-right: 0!important;
