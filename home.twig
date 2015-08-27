@@ -5,33 +5,14 @@
 <div class="template-container">
 	<div class="home-page">
 
-		<!-- FULL SCREEN SLIDESHOW -->
-		{{widget('responsiveslideshow', 'slideshow', {
-			'duration':'4',
-			'transSpeed': '2000',
-			'transType': 'fade',
-			'showButtons': false,
-			'showBullets': true,
-			'allowPause': false,
-			'allowLoop': false,
-			'crop': true,
-			'images':[
-			{
-				'imageHeight':'auto',
-				'imageWidth':'100%',
-				'url':asset('images/slide-5.jpg')
-			},
-			{
-				'imageHeight':'auto',
-				'imageWidth':'100%',
-				'url':asset('images/slide-6.jpg')
-			}
-			]
+		<!-- FULL SCREEN FEATURE -->
+		{{widget('feature', 'feature', {
+			'defaultBgImg': asset('images/slide-2.jpg'),
 		})|raw}}
 
 		<!-- HEADER -->
 		{% include "includes/header.twig" %}
-		
+
 	</div>
 
 	<!-- MAIN SECTION -->

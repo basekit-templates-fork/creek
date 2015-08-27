@@ -5,7 +5,7 @@
 
 //  1.   Menu Navigation
 //  2.   Menu Styles
-//  3.   Menu 
+//  3.   Menu
 
 
 
@@ -15,7 +15,7 @@
 
 .menusections {
 	ul {
-		text-transform: uppercase;
+// 		text-transform: uppercase;
 	}
 	li.menusections-item {
 		font-size: 14px;
@@ -44,7 +44,7 @@
 	}
 }
 
-.menu-items:not(.menu-section--subsection), 
+.menu-items:not(.menu-section--subsection),
 .menu-list {
 	column-count: 3;
 	column-gap: 50px;
@@ -126,46 +126,30 @@
 	}
 
 	li.dietary-item {
-		border: 2px solid @color-swatch7;
+		border-bottom: 2px solid @color-swatch7;
 		color: @color-swatch2;
 		font-size: 11px;
 		font-weight: 700;
-		padding: 0 10px;
-		margin-bottom: 5px;
-		margin-right: 0;
-		text-transform: uppercase;
+		margin: 0 0 5px 0;
+// 		text-transform: uppercase;
 
 		// Removes gap from inline-block
-		&:nth-child(n+2) {	
-			margin-left: -5px;
+		+ .dietary-item {
+			margin-left: 10px;
 		}
 	}
 }
 
 
 .menu-item--featured, .menu-section--featured {
-	background-color: transparent;
+	background-color: lighten(@color-swatch1, 10%);
 	border: 2px solid @color-swatch7;
+
 	margin-bottom: 30px;
 	padding-bottom: 0;
 
 	.item-content {
 		margin-top: 0;
-	}
-
-	li.dietary-item {
-		background-color: @font-swatch7-background-color;
-		border: none;
-		color: @font-swatch7-color;
-		margin-right: 8px;
-
-		&:first-child {
-			border-left: none;
-		}
-
-		&:nth-child(n+2) {	
-			margin-left: -4px;
-		}
 	}
 }
 

@@ -133,7 +133,6 @@ button.basket-toggle {
 
 	&:hover {
 		background-color: @font-swatch6-background-color;
-		color: @font-swatch6-color-hover;
 	}
 }
 
@@ -176,7 +175,6 @@ button.basket-toggle,
 
 	&:hover {
 		background-color: transparent;
-		color: @font-swatch6-background-color;
 	}
 
 	&:before {
@@ -194,8 +192,8 @@ button.basket-toggle,
 .nav-open .bk-selected .basket-toggle {
 	@media @tablet {
 		background-color: @font-swatch6-color-hover;
-		background-image: image('/images/basket-icon-white.png');
-		background-image: image('/images/basket-icon-white.svg'), none;
+		background-image: image('/images/basket-icon.png');
+		background-image: image('/images/basket-icon.svg'), none;
 		background-repeat: no-repeat;
     	background-position: 16px 14px;
 		background-size: 17px;
@@ -314,7 +312,7 @@ button.basket-toggle,
 
 	.item-remove {
 		background-color: rgb(197, 40, 40);
-  		color: rgb(219, 130, 130); 
+  		color: rgb(219, 130, 130);
   		font-size: 14px;
   		font-weight: 400;
 		padding: 0 0 0 2px;
@@ -336,7 +334,7 @@ button.basket-toggle,
 			display: none;
 			visibility: hidden;
 		}
-	}	
+	}
 }
 
 .basket-open .basket-footer {
@@ -404,9 +402,9 @@ button.basket-toggle,
     }
 
     .button--clear {
-    	background: #B83838 image('/images/cancel-icon.png') no-repeat center;
-    	height: 54px;
-    	width: 55px;
+    	background: @font-swatch7-background-color image('/images/cancel-icon.png');
+    	height: 45px;
+    	width: 45px;
     	white-space: nowrap;
     	text-indent: -99999px;
 
@@ -416,20 +414,16 @@ button.basket-toggle,
     }
 
     .ecomproductslist__button {
-    	background: @color-swatch3 image('/images/search-icon.png');
-    	background: @color-swatch3 image('/images/search-icon.svg'), none;
+    	background: @font-swatch7-background-color image('/images/search-icon.svg');
+    	background: @font-swatch7-background-color image('/images/search-icon.png');
     	background-repeat: no-repeat;
     	background-position: center;
     	color: @color-swatch3!important;
         margin-top: 0;
         overflow: hidden;
         text-indent: -9999px;
-        height: 54px;
-        width: 55px;
-
-        &:hover {
-        	color: @font-swatch7-background-color-hover!important;
-        }
+        height: 45px;
+        width: 45px;
     }
 }
 
@@ -496,7 +490,7 @@ form.ecomproductslist__form {
 		display: none;
 	}
 
-	// Search and Filter Container 
+	// Search and Filter Container
     .ecomproductslist__form-body {
         .ultimate-flex;
 
@@ -627,13 +621,13 @@ form.ecomproductslist__form {
 		}
 	}
 
-	.product-item-image, 
+	.product-item-image,
 	.product-item-image .image-link {
 		background-color: transparent;
 		max-height: 500px;
 		height: auto;
 		width: auto;
-		
+
 		@media @mobile-650px {
 			max-height: initial;
 		}
@@ -647,9 +641,6 @@ form.ecomproductslist__form {
 		line-height: @font-swatch2-line-height;
 		margin-bottom: 0;
 
-		a {
-			color: @font-swatch4-color;
-		}
 	}
 
 	.product-item-price {
@@ -664,7 +655,7 @@ form.ecomproductslist__form {
 
     // Pagination Buttons
     .button {
-        background-color: lighten(@font-swatch7-background-color, 45%);
+//         background-color: lighten(@font-swatch7-background-color, 45%);
         margin: 30px 0 20px;
         min-width: 0;
         padding: 3px 15px;
@@ -673,7 +664,7 @@ form.ecomproductslist__form {
         }
     }
     .current .button {
-        background-color: @font-swatch7-background-color;
+        background-color: @font-swatch7-background-color-hover;
     }
 
     // Previous Button Icon
@@ -748,10 +739,6 @@ form.ecomproductslist__form {
 		font-weight: @font-swatch2-font-weight;
 		line-height: bkscale(@font-swatch3-line-height, 1.05);
 		margin-bottom: 0;
-
-		a {
-			color: @font-swatch4-color;
-		}
 	}
 
 	.product-item-price {
@@ -874,7 +861,7 @@ form.ecomproductslist__form {
 		.image-button {
 			cursor: crosshair;
 			display: block;
-			
+
 			// Product image
 			.image {
 				display: block;
@@ -967,7 +954,6 @@ form.ecomproductslist__form {
 
 		&:hover {
 			background-color: darken(@color-swatch4, 10%);
-			color: @color-swatch1;
 		}
 
 		&:before {
@@ -991,13 +977,13 @@ form.ecomproductslist__form {
 		.flex-wrap(wrap);
 		margin: 0;
 
-		.product-attribute-title, 
-		.tag-link, 
+		.product-attribute-title,
+		.tag-link,
 		.category-link {
 		    font-size: bkscale(@font-swatch7-font-size, 0.86);
 		    font-weight: @font-swatch7-font-weight;
 		    letter-spacing: 1px;
-		    text-transform: uppercase;
+// 		    text-transform: uppercase;
 		}
 
 		.product-category {
@@ -1030,7 +1016,7 @@ form.ecomproductslist__form {
 			display: none;
 		}
 
-		.tag-link, 
+		.tag-link,
 		.category-link {
 			color: lighten(@font-swatch4-color, 35%);
 		}
@@ -1077,7 +1063,7 @@ form.ecomproductslist__form {
 .ecombasketsummary {
 
 	// Remove backgrounds and borders from table elements
-	.summary-table .cell, 
+	.summary-table .cell,
 	.summary-table {
 		background-color: transparent;
 		border: none;
@@ -1121,11 +1107,11 @@ form.ecomproductslist__form {
 	    font-size: bkscale(@font-swatch7-font-size, 0.85);
 	    font-weight: @font-swatch7-font-weight;
 	    letter-spacing: 1px;
-	    text-transform: uppercase;
+// 	    text-transform: uppercase;
 	}
 
 	// Remove padding from product image column
-	.cell--image, 
+	.cell--image,
 	.table-row--heading th:first-child {
 		padding-left: 0;
 		width: 20%;
@@ -1136,7 +1122,7 @@ form.ecomproductslist__form {
 	}
 
 	// Remove padding from subtotal column
-	.cell--total, 
+	.cell--total,
 	.table-row--heading th:last-child {
 		padding-right: 0;
 	}
@@ -1152,7 +1138,6 @@ form.ecomproductslist__form {
 
 	// Product item title
 	.summary-item-link {
-		color: @color-swatch4;
 		font-family: @font-swatch2-font-family;
 		font-size: @font-swatch4-font-size;
 		font-weight: @font-swatch2-font-weight;
@@ -1176,7 +1161,7 @@ form.ecomproductslist__form {
 	}
 
 	// Product add and remove buttons
-	.quantity-minus, 
+	.quantity-minus,
 	.quantity-plus {
 		background-color: transparent;
 		color: @color-swatch4;
@@ -1192,7 +1177,7 @@ form.ecomproductslist__form {
 	}
 
 	// Adds a diamond style background shape the to the plus and remove quantity buttons
-	.quantity-minus:after, 
+	.quantity-minus:after,
 	.quantity-plus:after {
 		background-color: @color-swatch7;
 		content: "";

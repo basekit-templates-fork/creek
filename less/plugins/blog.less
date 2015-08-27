@@ -41,7 +41,7 @@ div[data-widget-type="blogsearch"] {
             left: 4px;
             top: 7px;
             letter-spacing: 1px;
-            text-transform: uppercase;
+//             text-transform: uppercase;
             visibility: visible;
 
             @media @mobile-650px {
@@ -92,7 +92,7 @@ div[data-widget-type="blogsearch"] {
     // Remove padding from profile widget text
     h2.headline, p.business {
         padding-bottom: 0;
-    } 
+    }
 
     // Pushes Twitter username away from twitter bird
     .account-name {
@@ -170,10 +170,6 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 			 }
 		}
 
-		h2 a {
-			color: @font-swatch4-color;
-		}
-
 		.read-more {
 			background-color: @font-swatch7-background-color;
 	        color: @font-swatch7-color;
@@ -184,12 +180,11 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 	        margin-top: 5px;
 	        min-width: 100px;
 	        padding: 16px;
-	        text-transform: uppercase;
+// 	        text-transform: uppercase;
 	        .transition(all 0.5s ease-in-out);
 
 	        &:hover {
 	            background-color: @font-swatch7-background-color-hover;
-	            color: darken(@color-swatch2, 20%);
 	        }
 		}
 	}
@@ -222,11 +217,11 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 			font-weight: @font-swatch7-font-weight;
 			letter-spacing: 1px;
 			margin: 0;
-			text-transform: uppercase;
+// 			text-transform: uppercase;
 
 			@media @tablet-860px {
 				margin: 25px 0 0;
-			}	
+			}
 		}
 	}
 
@@ -244,7 +239,7 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 	@media @tablet-860px {
 		padding-left: 0;
 	}
-} 
+}
 
 .blogpostlist .post-article > .post-image ~ .post-content {
 	padding-left: 65px;
@@ -252,7 +247,7 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 	@media @tablet-860px {
 		padding: 12px 0 0;
 	}
-} 
+}
 
 
 // -----------------------------
@@ -360,7 +355,7 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 		font-weight: @font-swatch7-font-weight;
 		letter-spacing: 1px;
 		margin: 0;
-		text-transform: uppercase;
+// 		text-transform: uppercase;
 	}
 
 	// Tags and date text colour
@@ -531,3 +526,15 @@ div[data-widget-type="blogsearch"] + div[role="main"] .blogpostlist {
 		}
 	}
 }
+
+// Pagination
+.blogpostlist__pagination-list {
+	text-align: right;
+	.pagination-item {
+		display: inline-block;
+		&:first-of-type {
+			float: left;
+		}
+	}
+}
+
