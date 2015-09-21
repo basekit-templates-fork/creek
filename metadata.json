@@ -16,8 +16,7 @@
         "images/slide-2.jpg",
         "images/slide-3.jpg"
     ],
-    "colorSwatches":
-    {
+    "colorSwatches": {
         "Swatch 1": {
             "color1":"#f4f4f4",
             "color2":"#4d90fe",
