@@ -98,9 +98,9 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"PT Serif\", Georgia, serif",
-            "font-size": "15px",
-            "font-weight": "inherit",
+            "font-family": "\"Hammersmith One\", Tahoma, Verdana, sans-serif",
+            "font-size": "17px",
+            "font-weight": "400",
             "line-height": "32px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
